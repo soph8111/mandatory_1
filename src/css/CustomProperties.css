@@ -1,0 +1,92 @@
+/* Main css-file for defining colors, layout ... */
+
+/* Import fonts */
+@font-face {
+  font-family: 'MessapiaRegular';
+  src: url(../src/assets/fonts/Messapia-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'MessapiaBold';
+  src: url(../src/assets/fonts/Messapia-Bold.ttf);
+}
+
+/* CSS Variables */
+:root {
+  --main-color-blue: #083C6E;
+  --main-color-white: #dfdddd;
+  --background-color: rgb(197, 196, 196, 0.85);
+  --main-font-bold: MessapiaBold;
+  --main-font-regular: MessapiaRegular;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body  {
+  background-color: var(--main-color-white);
+}
+
+h1 {
+  font-family: var(--main-font-bold);
+  font-size: 2em;
+  color: var(--main-color-blue);
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-family: var(--main-font-bold);
+  font-size: 1em;
+  color: var(--main-color-blue);
+  margin-bottom: 0.8em;
+}
+
+h3 {
+  font-family: var(--main-font-regular);
+  font-size: 0.8em;
+  color: var(--main-color-blue);
+  margin-bottom: 0.8em;
+}
+
+.intro_text{
+  font-family: sans-serif;
+  margin: 2em 0;
+}
+
+.container {
+  margin: 100px 2em 0;
+}
+
+/* Buttons */
+
+button {
+  border: none;
+  background: none;
+  font-family: var(--main-font-bold);
+}
+
+.styled_button {
+  background-color: var(--main-color-blue);
+  height: 30px;
+  place-content: center;
+  color: var(--main-color-white);
+  border-radius: 10px;
+  font-family: var(--main-font-bold);
+  font-size: 0.7em;
+}
+
+/* Styling desktop  */
+@media (min-width: 992px) {
+  
+  .container {
+    margin: 100px 10em 0;
+  }
+
+  .intro_text {
+    width: 28em;
+  }
+
+}
